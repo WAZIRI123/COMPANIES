@@ -1,0 +1,50 @@
+    @import "~bootstrap/scss/bootstrap";
+    $fa-font-path: "../webfonts";
+    @import "~@fortawesome/fontawesome-free/scss/fontawesome";
+    @import "~@fortawesome/fontawesome-free/scss/solid";
+    @import "~@fortawesome/fontawesome-free/scss/brands";
+    @import "~@fortawesome/fontawesome-free/scss/regular";
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;500;800&display=swap');
+    .bg-darks {
+        background-color: rgb(0, 0, 0) !important;
+    }
+    
+    .active {
+        font-weight: bold;
+        color: #DD3333;
+    }
+    
+    .right-50 {
+        position: relative !important;
+        right: 18% !important;
+    }
+    
+    .bg-body {
+        background-color: #BFBFBF !important;
+    }
+    
+    .link {
+        text-decoration: none;
+        font-family: 'Great Vibes', cursive;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+    
+    .color {
+        color: #DD3333;
+    }
+    
+    .link:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .dott::before {
+        content: "\2022";
+        margin: 0 5px;
+        font-size: 12px;
+    }
+    
+    .z-scrollbtn {
+        z-index: 1000 !important;
+    }
