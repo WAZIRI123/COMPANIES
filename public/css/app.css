@@ -20454,8 +20454,19 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 .bg-darks {
   background-color: black !important;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
 }
 
 .active {
@@ -20476,7 +20487,13 @@ readers do not read off random characters that represent icons */
   text-decoration: none;
   font-family: "Great Vibes", cursive;
   font-family: "Open Sans", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+.p-font {
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
 }
 
 .color {
@@ -20486,6 +20503,7 @@ readers do not read off random characters that represent icons */
 .link:hover {
   cursor: pointer;
   text-decoration: underline;
+  color: #DD3333;
 }
 
 .dott::before {
@@ -20496,4 +20514,25 @@ readers do not read off random characters that represent icons */
 
 .z-scrollbtn {
   z-index: 1000 !important;
+}
+
+.nav {
+  transition: all 0.2s ease-in;
+}
+
+.main-flex {
+  border-top: 2px solid #DD3333;
+  height: auto !important;
+}
+
+.card-flex {
+  height: auto !important;
+}
+
+.lh {
+  line-height: 1.8rem;
+}
+
+.strong {
+  font-weight: 500;
 }

@@ -5,8 +5,19 @@
     @import "~@fortawesome/fontawesome-free/scss/brands";
     @import "~@fortawesome/fontawesome-free/scss/regular";
     @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;500;800&display=swap');
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
     .bg-darks {
         background-color: rgb(0, 0, 0) !important;
+    }
+    
+    html {
+        overflow-y: scroll;
+    }
+    
+    body {
+        margin: 0;
     }
     
     .active {
@@ -27,7 +38,13 @@
         text-decoration: none;
         font-family: 'Great Vibes', cursive;
         font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
+        font-size: 16px;
+    }
+    
+    .p-font {
+        color: #000000;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
     }
     
     .color {
@@ -37,6 +54,7 @@
     .link:hover {
         cursor: pointer;
         text-decoration: underline;
+        color: #DD3333;
     }
     
     .dott::before {
@@ -47,4 +65,25 @@
     
     .z-scrollbtn {
         z-index: 1000 !important;
+    }
+    
+    .nav {
+        transition: all 0.2s ease-in;
+    }
+    
+    .main-flex {
+        border-top: 2px solid #DD3333;
+        height: auto !important;
+    }
+    
+    .card-flex {
+        height: auto !important;
+    }
+    
+    .lh {
+        line-height: 1.8rem;
+    }
+    
+    .strong {
+        font-weight: 500;
     }

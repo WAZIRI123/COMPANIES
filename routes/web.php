@@ -14,11 +14,6 @@ use App\Http\Controllers\HomeController;
 */
 
 
-Route::get('/AboutUs', \App\Http\Livewire\AboutUs::class);
-Route::get('/', \App\Http\Livewire\Home::class);
-Route::get('/NewAudio', \App\Http\Livewire\NewAudio::class);
-Route::get('/Video', \App\Http\Livewire\Video::class);
-Route::get('/ENews', \App\Http\Livewire\ENews::class);
-Route::get('/Gospel', \App\Http\Livewire\Gospel::class);
-Route::get('/Cover', \App\Http\Livewire\Cover::class);
-Route::get('/ContactUs', \App\Http\Livewire\ContactUs::class);
+
+Route::post('/', \App\Http\Livewire\Home::class);
+Route::post('/Tour', \App\Http\Livewire\Tour::class);

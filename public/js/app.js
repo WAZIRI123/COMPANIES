@@ -2167,6 +2167,19 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 var Turbolinks = __webpack_require__(/*! turbolinks */ "./node_modules/turbolinks/dist/turbolinks.js");
 
 Turbolinks.start();
+var nav = document.querySelector("#nav");
+var options = {};
+var observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio < 0.2) {
+      //  block of code to be executed if condition1 is true
+      entry.target.style.display = 'none';
+    }
+
+    observer.unobserve(entry.target);
+  });
+}, options);
+observer.observe(nav);
 
 /***/ }),
 
