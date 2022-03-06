@@ -22,6 +22,9 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('location');
             $table->string('phone');
+            $table->string('sent')->default('No');
+            $table->string('status')->default('inactive');
+            $table->string('responded')->default('No');
             $table->timestamps();
         });
     }

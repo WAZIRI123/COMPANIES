@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-darks sticky-top" id="nav"
-@scroll.window='atTop=(window.pageYOffset >100) ? true : false '  :class="{'py-0 nav' : atTop, '' : !atTop}"
+@scroll.window='atTop=(window.pageYOffset >100) ? true : false '  :class="{' nav' : atTop, '' : !atTop}"
 >
     <div class="container-fluid ">
         <a class="navbar-brand" href="{{ url('/') }}">

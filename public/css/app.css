@@ -20465,6 +20465,10 @@ html {
   overflow-y: scroll;
 }
 
+.hide {
+  display: none !important;
+}
+
 body {
   margin: 0;
 }
